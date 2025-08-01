@@ -3,8 +3,8 @@ import style from "./style.module.css";
 import { useState } from "react";
 
 const SearchPages = () => {
-  const [statute, setStatute] = useState<string[]>(["법령 1", "법령 2"]);
-  const [bill, setBill] = useState<string[]>(["법안 1", "법안 2"]);
+  const [statute, _setStatute] = useState<string[]>(["법령 1", "법령 2"]);
+  const [bill, _setBill] = useState<string[]>(["법안 1", "법안 2"]);
   const [keyword, setKeyword] = useState("");
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {

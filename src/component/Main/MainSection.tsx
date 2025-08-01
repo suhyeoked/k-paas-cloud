@@ -3,8 +3,8 @@ import style from '../Main/style.module.css'
 
 
 export default function MainSection (){
-    const [tag , setTag] = useState<string []>(["인기태그 1" , "인기태그 2"]);
-    const [law , setLaw] = useState<string []>(["청년들을 위한 법안1" , "청년들을 위한 법안2" , "청년들을 위한 법안3"]);
+    const [tag , _setTag] = useState<string []>(["인기태그 1" , "인기태그 2"]);
+    const [law , _setLaw] = useState<string []>(["청년들을 위한 법안1" , "청년들을 위한 법안2" , "청년들을 위한 법안3"]);
 
     return(
         <>
@@ -18,13 +18,13 @@ export default function MainSection (){
                 </p>
                 <div className={style.Tag}>                
                     {
-                        tag.map((tag , i)=>{
+                        tag.map((tag , index )=>{
                             return(
-                                <>
+                                <div key={index}>
                                     <h1>
                                         {tag}
                                     </h1>
-                                </>
+                                </div>
                             )
                         })
                     }
@@ -35,9 +35,9 @@ export default function MainSection (){
             </h1>
             <div className={style.Law}>
                 {
-                    law.map((law , i)=>{
+                    law.map((law , index)=>{
                         return(
-                            <div>
+                            <div key={index}>
                                 {law}
                             </div>
                         )
