@@ -1,0 +1,44 @@
+.Laws {
+    display: flex;
+    margin: 30px 0;
+    gap: 12px;
+    
+}
+
+.Laws > li {
+    padding: 5px 30px;
+    border: 1px solid #CBCBCB;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #D9D9D9;
+}
+
+.tabLaws {
+    display: flex;
+}
+
+.tabLaws {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+  
+.card > p {
+    margin: 30px 0;
+}
+
+.titleIndex {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.Detail {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 30px;
+}
