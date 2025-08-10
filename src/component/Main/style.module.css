@@ -1,30 +1,88 @@
+.MainInput {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.MainLeft {
+    background-color: #26283D;
+    width: 46%;
+    color: white;
+    padding: 70px 70px 160px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 60px;
+    position: absolute;
+}
+
+.MainLeft > h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.MainRight {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    right: 0;
+    background-color: #A9C7BC;
+    padding: 80px 80px 150px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 100px;
+}
+
+
 .input {
-    width: 60%;
-    margin: 50px auto 0;
+    width: 70%;
+    position: relative;
+    display: flex;
+}
+
+.img {
+    position: absolute;
+    bottom: -12%;
+    left: -2%;
+    z-index: 2;
+}
+
+.inputSearch {
+    z-index: 1;
+}
+
+.inputButton {
+    background-color: #26283D;
+    width: 101px;
+    color: white;
+    border-radius: 22.5px;
+    position: absolute;
+    height: 40px;
+    right: -12.8%;
+    cursor: pointer;
 }
 
 .PopularityTag {
-    width: 60%;
-    margin: 30px auto;
+    margin-top: 90px;
 }
 
-.PopularityTag > div {
-    background-color: #D9D9D9;
-    width: 100%;
-    padding: 20px;
-}
 
 .PopularityTag > p {
-    margin-bottom: 30px;
+    background-color: #26283D;
+    width: 89px;
+    padding: 10px 0;
+    border-radius: 22.5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
 }
 
 .Tag {
     display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-weight: bold;
 }
 
-.Tag > h1 {
-    margin: 10px;
-}
 
 .Law {
     display: flex;
@@ -38,4 +96,76 @@
     height: 200px;
     border-radius: 30px;
     padding: 30px;
+}
+
+.footerSection {
+    background-color: #26283D;
+    margin-top: 100px;
+}
+
+.footerSection > div {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.footerSection > div:last-child {
+    padding-bottom: 150px;
+}
+
+.footerSection h1 {
+    color: white;
+    font-size: 1.2em;
+}
+
+.footerSection span {
+    color: #FFAC33;
+    font-size: 1.5em;
+}
+
+.footerSectionLaw {
+    display: flex;
+    gap: 50px;
+}
+
+.footerLaw {
+    flex: 1;
+    height: 202px;
+    border-radius: 30px;
+}
+
+.footerLawH1 {
+    padding: 8px;
+    width: 150px;
+    text-align: center;
+    margin: 30px;
+    background-color: #26283D;
+    border-radius: 16.5px;
+}
+
+.footerLaw h2 {
+    color: #000000;
+    margin: 0 30px;
+    font-weight: bold;
+}
+.footerLaw {
+    background-color: #F5F5F5;
+}
+
+.footerLawFooter {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    width: 60%;
+}
+
+.footerLawFooter > li:last-child {
+    color: #6D6D6D;
+}
+
+.centerLineVertical {
+    border-left: 2px solid #000;
+    height: 20px;
+    margin: auto;
 }

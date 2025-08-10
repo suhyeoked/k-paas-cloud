@@ -19,14 +19,10 @@
   }
 }
 
-body {
-  width: 80%;
-  margin: 0 auto;
-}
-
 input[type="search"] {
   border-radius: 81px;
-  border: 2px solid black;
-  padding: 5px 30px;
+  background-color: white;
+  padding: 8px 90px;
   width: 100%;
+
 }
